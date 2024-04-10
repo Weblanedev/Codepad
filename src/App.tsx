@@ -4,6 +4,7 @@ import Homepage from "./homepage";
 import Footer from "./footer";
 import About from "./about";
 import Contact from "./contact";
+import Billing from "./billing";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/billing" element={<Billing />} />
       </Routes>
       <Footer />
     </>

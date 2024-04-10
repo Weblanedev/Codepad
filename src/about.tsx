@@ -56,7 +56,7 @@ const About = () => {
       </section>
 
       <section className="flex w-full flex-col items-center justify-center md:justify-between gap-16 bg-blue-500/30 py-14 md:py-20">
-        <h2 className="font-medium text-[40px] leading-tight text-blue-950">
+        <h2 className="font-medium md:font-semibold text-[50px] sm:text-[40px] md:text-[50px] md:text-left leading-snug md:leading-[62px] text-center text-blue-950">
           What we value
         </h2>
         <div className="px-10 md:px-[130px] flex flex-col md:flex-row justify-center items-center w-full gap-5">

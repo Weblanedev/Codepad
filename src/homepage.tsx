@@ -17,7 +17,7 @@ const Homepage = () => {
 
           <Link
             to="/billing"
-            className="text-base font-medium text-white bg-blue-500 rounded-md md:rounded-md px-7 md:px-12 py-4 md:py-5 hover:bg-blue-600 flex items-center justify-center gap-3"
+            className="text-base font-medium text-white bg-blue-500 rounded-full px-7 md:px-12 py-4 md:py-5 hover:bg-blue-600 flex items-center justify-center gap-3"
           >
             Explore Products
           </Link>

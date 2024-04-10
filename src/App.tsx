@@ -5,6 +5,7 @@ import Footer from "./footer";
 import About from "./about";
 import Contact from "./contact";
 import Billing from "./billing";
+import PrivacyPolicy from "./terms-and-privacy";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/billing" element={<Billing />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </>

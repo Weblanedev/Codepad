@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
+import { books } from "./utils";
+import { useEffect } from "react";
 
 const Homepage = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+
+    });
+  }, []);
+
   return (
     <div className="w-full h-full flex flex-col pt-[66px] md:pt-[80px]">
       <section className="flex flex-col-reverse md:flex-row h-[90vh] md:h-[85vh] mx-10 md:mx-[130px] items-center justify-center md:justify-between gap-5 bg-white">
@@ -16,8 +27,8 @@ const Homepage = () => {
           </p>
 
           <Link
-            to="/billing"
-            className="text-base font-medium text-white bg-blue-500 rounded-full px-7 md:px-12 py-4 md:py-5 hover:bg-blue-600 flex items-center justify-center gap-3"
+            to="/products"
+            className="text-base font-medium text-white bg-blue-500 rounded-full px-7 md:px-12 py-4  hover:bg-blue-600 flex items-center justify-center gap-3"
           >
             Explore Products
           </Link>
@@ -31,7 +42,7 @@ const Homepage = () => {
       </section>
 
       <section className="flex w-full flex-col md:flex-row items-center justify-center md:justify-between gap-5 bg-blue-500/30 py-14 md:py-20">
-        <div className="mx-10 md:mx-[130px] flex flex-col md:flex-row justify-between items-center w-full gap-5">
+        <div className="mx-10 md:mx-[130px] flex flex-col md:flex-row justify-between items-center w-full gap-5 hidden">
           <div className="flex gap-[30px] flex-col sm:flex-row">
             <div className="flex flex-col gap-5 items-start justify-center p-8 bg-white rounded-2xl w-[300px] md:w-[400px]">
               <img
@@ -82,6 +93,30 @@ const Homepage = () => {
               Learn More
             </button>
           </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-8 items-center justify-center w-full">
+          {books.slice(0, 3).map((book) => (
+            <div className="flex flex-col items-center justify-center pt-12 pb-8 px-16 md:px-20 gap-7 bg-white rounded-2xl text-blue-900 round ed-xl">
+              <img
+                src={book.img}  
+                alt=""
+                className="w-[120px] h-[160px] object-cover rou nded-xl drop-shadow-lg"
+              />
+              <h4 className="font-medium text-[18px] md:text-[20px] md:w-[240px] leading-tight text-center w-[200px] line-clamp-2">
+                {book.title}
+              </h4>
+              <p className="mt-[-15px] text-[12px] md:text-[14px] text-center w-[200px] line-clamp-3 md:w-[240px]">
+                {book.summary}
+              </p>
+              <Link
+                to="/billing"
+                className="text-base font-medium text-white bg-blue-500 rounded-full px-7 md:px-8 py-2 md:py-3 hover:bg-blue-600 flex items-center justify-center gap-3"
+              >
+                Purchase
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
 

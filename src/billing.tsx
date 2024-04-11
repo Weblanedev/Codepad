@@ -4,6 +4,14 @@ import { useModals } from "./useModal";
 import ShowOrderModal from "./show-order";
 
 const Billing = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   // State to manage the disabled state of the button
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 

@@ -1,4 +1,14 @@
+import { useEffect } from "react";
+
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div className="w-full h-full flex flex-col pt-[66px] md:pt-[80px]">
       <section className="relative h-[250px] md:h-[300px]">

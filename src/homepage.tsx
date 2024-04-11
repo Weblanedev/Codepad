@@ -8,7 +8,6 @@ const Homepage = () => {
       top: 0,
       left: 0,
       behavior: "smooth",
-
     });
   }, []);
 
@@ -42,64 +41,11 @@ const Homepage = () => {
       </section>
 
       <section className="flex w-full flex-col md:flex-row items-center justify-center md:justify-between gap-5 bg-blue-500/30 py-14 md:py-20">
-        <div className="mx-10 md:mx-[130px] flex flex-col md:flex-row justify-between items-center w-full gap-5 hidden">
-          <div className="flex gap-[30px] flex-col sm:flex-row">
-            <div className="flex flex-col gap-5 items-start justify-center p-8 bg-white rounded-2xl w-[300px] md:w-[400px]">
-              <img
-                src="https://images.ctfassets.net/5i1m3im8l2b5/gjZWf327jNvv0W7SKVUIi/3efb176d4ca48296f367c35f05224f08/icon-enterprise.png?w=81&h=81&q=75&fm=webp"
-                alt=""
-              />
-              <h3 className="font-medium text-[28px] leading-tight">
-                Codepad Business Access
-              </h3>
-              <p className="">
-                Secure, high-performance remote access from any device,
-                anywhere, at an unbeatable price
-              </p>
-              <button className="text-base md:mt-10 font-medium text-white bg-blue-500 rounded-full px-7 md:px-9 py-3 hover:bg-blue-600 flex items-center justify-center gap-3">
-                Learn More
-              </button>
-            </div>
-            <div className="flex flex-col gap-5 items-start justify-center p-8 bg-white rounded-2xl w-[300px] md:w-[400px]">
-              <img
-                src="https://images.ctfassets.net/5i1m3im8l2b5/gjZWf327jNvv0W7SKVUIi/3efb176d4ca48296f367c35f05224f08/icon-enterprise.png?w=81&h=81&q=75&fm=webp"
-                alt=""
-              />
-              <h3 className="font-medium text-[28px] leading-tight">
-                Codepad Business Access
-              </h3>
-              <p className="">
-                Secure, high-performance remote access from any device,
-                anywhere, at an unbeatable price
-              </p>
-              <button className="text-base md:mt-10 font-medium text-white bg-blue-500 rounded-full px-7 md:px-9 py-3 hover:bg-blue-600 flex items-center justify-center gap-3">
-                Learn More
-              </button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5 items-start justify-center p-8 bg-white rounded-2xl w-[300px] md:w-[400px]">
-            <img
-              src="https://images.ctfassets.net/5i1m3im8l2b5/gjZWf327jNvv0W7SKVUIi/3efb176d4ca48296f367c35f05224f08/icon-enterprise.png?w=81&h=81&q=75&fm=webp"
-              alt=""
-            />
-            <h3 className="font-medium text-[28px] leading-tight">
-              Codepad Business Access
-            </h3>
-            <p className="">
-              Secure, high-performance remote access from any device, anywhere,
-              at an unbeatable price
-            </p>
-            <button className="text-base md:mt-10 font-medium text-white bg-blue-500 rounded-full px-7 md:px-9 py-3 hover:bg-blue-600 flex items-center justify-center gap-3">
-              Learn More
-            </button>
-          </div>
-        </div>
-
         <div className="flex flex-col md:flex-row gap-8 items-center justify-center w-full">
           {books.slice(0, 3).map((book) => (
             <div className="flex flex-col items-center justify-center pt-12 pb-8 px-16 md:px-20 gap-7 bg-white rounded-2xl text-blue-900 round ed-xl">
               <img
-                src={book.img}  
+                src={book.img}
                 alt=""
                 className="w-[120px] h-[160px] object-cover rou nded-xl drop-shadow-lg"
               />
@@ -146,7 +92,7 @@ const Homepage = () => {
           </Link>
 
           <Link
-            to="/blog/one"
+            to="/blog/two"
             className="w-full sm:w-[660px] h-[334px] md:w-[470px] md:h-[396px] relative rounded-2xl cursor-pointer group"
           >
             <div className="absolute z-10 opacity-50 w-full h-full  bg-black rounded-2xl group-hover:opacity-60 transition-all"></div>
@@ -163,14 +109,14 @@ const Homepage = () => {
               </h4>
 
               <h1 className="font-medium md:font-semibold text-[30px] md:text-[32px] w-full sm:w-[550px] md:w-[400px] leading-tight">
-                How organisations can champion women every day of the year
+              Apple Vision Pro and its future in the business world
               </h1>
             </div>
           </Link>
         </div>
         <div className="flex flex-col md:flex-row-reverse gap-[30px] w-full items-center justify-center">
           <Link
-            to="/blog/one"
+            to="/blog/three"
             className="w-full sm:w-[660px] h-[334px] md:w-[760px] md:h-[396px] relative rounded-2xl cursor-pointer group"
           >
             <div className="absolute z-10 opacity-50 w-full h-full  bg-black rounded-2xl group-hover:opacity-60 transition-all"></div>
@@ -187,7 +133,7 @@ const Homepage = () => {
               </h4>
 
               <h1 className="font-medium md:font-semibold text-[30px] md:text-[32px] w-full sm:w-[550px] md:w-[400px] leading-tight">
-                How organisations can champion women every day of the year
+              Building a culture of effective decision-making
               </h1>
             </div>
           </Link>

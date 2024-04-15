@@ -2,20 +2,17 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const BlogThree = () => {
-    useEffect(() => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth",
-        });
-      }, []);
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <div className="w-full h-full flex flex-col pt-[66px] md:pt-[80px]">
-     
-
-     <section className="relative border h-[300px] md:h-[550px]">
+      <section className="relative border h-[300px] md:h-[550px]">
         <div className="absolute z-10 opacity-20 w-full h-full  bg-black"></div>
 
         <img
@@ -38,124 +35,43 @@ const BlogThree = () => {
         <div className="w-full flex flex-col md:flex-row gap-[66px] justify-between">
           <div className="flex flex-col items-start gap-[10px] md:pt-[78px]">
             <h3 className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-white py-[9px] px-[17px] rounded-full font-semibold text-[14px] leading-[14px]">
-              Marketing Tips
+            Decision-Making
             </h3>
             <h2 className="font-mediium text-[30.68px] md:text-[40px] w-full sm:w-[530px] md:w-[382px] leading-[45px] text-[#010910]">
-              Statistical data in Marketing
+              Encouraging Open Communication
             </h2>
             <p className="text-[16px] text-black leading-[28.8px] font-normal mt-[10px] w-full md:w-[382px]">
-              We provide marketing services to startups and small businesses
-              looking for a partner for their digital media. We work with you,
-              not for you.We are lorem duoa headquartered in North-Eastern
-              France, with our 19 associates located across nine countries in
-              order to best serve a client base that stretches throughout North
-              America.
+              The foundation of effective decision-making lies in open
+              communication. Leaders should create a safe space where all
+              employees feel comfortable expressing their opinions and
+              challenging the status quo. This fosters diverse perspectives and
+              prevents groupthink, a common pitfall that can lead to poor
+              choices. Actively solicit input from team members at all levels
+              and encourage healthy debate to arrive at well-informed
+              conclusions.
             </p>
           </div>
 
           <img
-            src="https://chopzbetlimited.com/wp-content/uploads/2024/02/leader.jpg"
+            src="https://assets-global.website-files.com/646f9696be2579248b7e3010/65ca0e40075432eb469d4543_Decision-Making-Header-001.jpg"
             alt=""
-            className="w-full md:w-[500px]  border-[18px] md:border-[25px] rounded-3xl"
+            className="w-full md:w-[500px] object-cover border-[18px] md:border-[25px] rounded-3xl"
           />
         </div>
 
         <div className="relative flex flex-col gap-8 items-center w-full justify-center">
           <h3 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            Copywriting: What’s branding got to do with it?
+            Data-Driven Approach
           </h3>
           <p className="text-[16px] text-black leading-[28.8px] font-normal w-full">
-            Using customer insights to build customer-centric campaigns that
-            deliver high performance including messaging, propositions, campaign
-            flows and media strategy. Untapping revenue. Creating more value.
-            Unleashing the potential of your vision. Let us help you turn
-            insights into engagement and strategy into action.
+            Effective decision-making goes beyond simply listening to everyone's
+            opinion. In today's data-driven world, it's crucial to gather and
+            analyze relevant information before making a choice. Encourage teams
+            to gather data from multiple sources, including customer feedback,
+            market research, and competitor analysis. By using data to support
+            their arguments, employees can build stronger cases for their ideas
+            and ultimately lead to more informed decisions.
           </p>
-        </div>
-
-        <div className="relative flex flex-col gap-8 items-center w-full justify-center">
-          <h3 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            Copywriting: What’s branding got to do with it?
-          </h3>
-          <p className="text-[16px] text-black leading-[28.8px] font-normal w-full">
-            Untapping revenue. Creating more value. Unleashing the potential of
-            your vision. Let us help you turn insights into engagement and
-            strategy into action. The right strategy will drive your business
-            forward.
-          </p>
-
-          <ul className="text-[16px] text-black leading-[28.8px] font-normal w-full list-decimal pl-12 md:pl-20 mt-[-9px]">
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-          </ul>
-        </div>
-
-        <div className="relative flex flex-col gap-8 items-center w-full justify-center">
-          <h3 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            How to find your brand message?
-          </h3>
-          <p className="text-[16px] text-black leading-[28.8px] font-normal w-full">
-            The right strategy will drive your business forward. Starting with
-            an immersive discovery process, we get to know your company and
-            understand your goals. Then, we map out a strategy that will achieve
-            those goals in the smartest way possible. Using customer insights to
-            build customer-centric campaigns that deliver high performance
-            including messaging, propositions, campaign flows and media
-            strategy.
-          </p>
-        </div>
-
-        <div className="relative flex flex-col gap-8 items-center w-full justify-center">
-          <h3 className="font-mediium text-[30.68px] md:text-[40px] w-full leading-[45px] text-[#010910]">
-            Copywriting: What’s branding got to do with it?
-          </h3>
-          <p className="text-[16px] text-black leading-[28.8px] font-normal w-full">
-            Untapping revenue. Creating more value. Unleashing the potential of
-            your vision. Let us help you turn insights into engagement and
-            strategy into action. The right strategy will drive your business
-            forward.
-          </p>
-
-          <ul className="text-[16px] text-black leading-[28.8px] font-normal w-full list-decimal pl-12 md:pl-20 mt-[-9px]">
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-            <li>
-              Your online platforms: need to work for your business, showing
-              your audience what you can do for them.
-            </li>
-          </ul>
         </div>
 
         <Link
@@ -181,8 +97,6 @@ const BlogThree = () => {
           </div>
         </Link>
       </section>
-
-     
     </div>
   );
 };

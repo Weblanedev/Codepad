@@ -165,7 +165,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Call Us
               </h4>
-              <p className="text-blue-500 leading-[16px]">+234-908-750-2020</p>
+              <p className="text-blue-500 leading-[16px]">+234-817-351-5320</p>
             </div>
           </div>
           <div className="flex gap-5 items-start justify-center">
@@ -174,7 +174,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Mail Us
               </h4>
-              <p className="text-blue-500 leading-[16px]">info@codepad.com</p>
+              <p className="text-blue-500 leading-[16px]">support@codepad.ng</p>
             </div>
           </div>
           <div className="flex gap-5 items-start justify-center">

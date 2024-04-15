@@ -2,8 +2,9 @@ import { MouseEventHandler, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useModals } from "./useModal";
 import ShowOrderModal from "./show-order";
+import { Book } from "./utils";
 
-const Billing = () => {
+const Billing = ({ selectedBook }: { selectedBook: Book }) => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -11,6 +12,20 @@ const Billing = () => {
       behavior: "smooth",
     });
   }, []);
+
+  function add100Dollars(input: string): string {
+    // Extracting the numerical part of the input string
+    const numericalPart = parseFloat(input.replace(/[^\d.]/g, ""));
+
+    // Adding 100 to the numerical part
+    const result = numericalPart + 105;
+
+    // Formatting the result back to the original format
+    const formattedResult = result.toFixed(2);
+    const output = `$${formattedResult}`;
+
+    return output;
+  }
 
   // State to manage the disabled state of the button
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
@@ -141,25 +156,33 @@ const Billing = () => {
               </h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
-              <h4 className="text-[#161616] font-medium text-[16px]">
-                Cabinet Wall Mounted × 1
+              <h4 className="text-[#161616] font-medium text-[16px] leading-5 upperc ase w-[350px]">
+                {selectedBook?.title}
               </h4>
               <h4 className="text-[#161616] font-medium text-[16px]">
-                $199.00
+                {selectedBook?.price}
               </h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
-              <h4 className="text-[#707070] font-medium text-[13px]">
-                SUBTOTAL
+              <h4 className="text-[#707070] uppercase font-medium text-[13px]">
+                Professional consultation service charge
               </h4>
               <h4 className="text-[#161616] font-medium text-[16px]">
-                $199.00
+                $100.00
+              </h4>
+            </div>
+            <div className="flex items-center justify-between py-[15px] w-full border-b">
+              <h4 className="text-[#707070] uppercase font-medium text-[13px]">
+                Processing Fee
+              </h4>
+              <h4 className="text-[#161616] font-medium text-[16px]">
+                $5.00
               </h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
               <h4 className="text-[#707070] font-medium text-[13px]">TOTAL</h4>
               <h4 className="text-[#a20401] font-medium text-[16px]">
-                $199.00
+                {add100Dollars(selectedBook.price)}
               </h4>
             </div>
           </div>
@@ -333,7 +356,7 @@ const Billing = () => {
             <button
               type="submit"
               disabled={isButtonDisabled}
-              className="text-base font-medium text-white bg-green-500 rounded-md md:rounded-md px-7 md:px-12 py-[15px] hover:bg-green-600 w-full mt-[22px] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-green-500"
+              className="text-base font-medium text-white bg-blue-500 rounded-full px-7 md:px-12 py-[15px] hover:bg-blue-600 w-full mt-[22px] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-blue-500"
               onClick={handleSubmit}
             >
               Place Order

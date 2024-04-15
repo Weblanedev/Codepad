@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
-import { books, genres } from "./utils";
+import { Book, books, genres } from "./utils";
 import { useEffect, useState } from "react";
 
-const ProductsPage = () => {
+const ProductsPage = ({
+  setSelectedBook,
+}: {
+  setSelectedBook: (selectedBook: Book) => void;
+}) => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -20,7 +24,7 @@ const ProductsPage = () => {
     e.preventDefault();
     // get the href and remove everything before the hash (#)
     const href = e.currentTarget.href;
-    
+
     const targetId = href.replace(/.*\#/, "");
     // get the element by id and use scrollIntoView
     const elem = document.getElementById(targetId);
@@ -91,8 +95,12 @@ const ProductsPage = () => {
                 <p className="mt-[-15px] text-[12px] text-center w-[200px] line-clamp-3">
                   {book.summary}
                 </p>
+                <h4 className="mt-[-15px] font-bold text-[18px] leading-tight text-center w-[200px] line-clamp-2">
+                  {book.price}
+                </h4>
                 <Link
                   to="/billing"
+                  onClick={() => setSelectedBook(book)}
                   className="text-base font-medium text-white bg-blue-500 rounded-full px-7 md:px-8 py-2 md:py-3 hover:bg-blue-600 flex items-center justify-center gap-3"
                 >
                   Purchase

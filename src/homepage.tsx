@@ -34,7 +34,7 @@ const Homepage = () => {
         </div>
 
         <img
-          src="https://tis-tis-io-asset-prd.s3.eu-central-1.amazonaws.com/team_339c3ad3fa.jfif"
+          src="https://blacksourcemedia.com/wp-content/uploads/2023/01/black-business-people.jpg"
           alt=""
           className="w-full h-[300px] md:h-[500px] md:w-[600px] object-cover rounded-xl shadow-lg"
         />
@@ -109,14 +109,14 @@ const Homepage = () => {
               </h4>
 
               <h1 className="font-medium md:font-semibold text-[30px] md:text-[32px] w-full sm:w-[550px] md:w-[400px] leading-tight">
-              Apple Vision Pro and its future in the business world
+                Apple Vision Pro and its future in the business world
               </h1>
             </div>
           </Link>
         </div>
         <div className="flex flex-col md:flex-row-reverse gap-[30px] w-full items-center justify-center">
           <Link
-            to="/blog/three"
+            to="/blog/one"
             className="w-full sm:w-[660px] h-[334px] md:w-[760px] md:h-[396px] relative rounded-2xl cursor-pointer group"
           >
             <div className="absolute z-10 opacity-50 w-full h-full  bg-black rounded-2xl group-hover:opacity-60 transition-all"></div>
@@ -133,14 +133,14 @@ const Homepage = () => {
               </h4>
 
               <h1 className="font-medium md:font-semibold text-[30px] md:text-[32px] w-full sm:w-[550px] md:w-[400px] leading-tight">
-              Building a culture of effective decision-making
+                How organisations can champion women every day of the year
               </h1>
             </div>
           </Link>
 
           <Link
-            to="/blog/one"
-            className="w-full sm:w-[660px] h-[334px] md:w-[470px] md:h-[396px] relative rounded-2xl cursor-pointer group"
+            to="/blog/three"
+            className="w-full sm:w-[660px] h-[334px] md:w-[760px] md:h-[396px] relative rounded-2xl cursor-pointer group"
           >
             <div className="absolute z-10 opacity-50 w-full h-full  bg-black rounded-2xl group-hover:opacity-60 transition-all"></div>
 
@@ -156,7 +156,7 @@ const Homepage = () => {
               </h4>
 
               <h1 className="font-medium md:font-semibold text-[30px] md:text-[32px] w-full sm:w-[550px] md:w-[400px] leading-tight">
-                How organisations can champion women every day of the year
+                Building a culture of effective decision-making
               </h1>
             </div>
           </Link>

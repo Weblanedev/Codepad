@@ -51,8 +51,8 @@ const Footer = () => {
         </Link>
       </div>
 
-      <p className="text-[12px] leading-[24px] text-center text-gray-400">
-        © 2023 Codepad Limited. All Rights Reserved Apollo
+      <p className="text-[12px] capitalize leading-[24px] text-center text-gray-400">
+        © 2023 CodePad technology platforms Limited. All Rights Reserved Apollo
       </p>
     </div>
   );

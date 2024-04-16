@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
-import { books } from "./utils";
+import { Book, books } from "./utils";
 import { useEffect } from "react";
 
-const Homepage = () => {
+const Homepage = ({
+  setSelectedBook,
+}: {
+  setSelectedBook: (selectedBook: Book) => void;
+}) => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -55,8 +59,12 @@ const Homepage = () => {
               <p className="mt-[-15px] text-[12px] md:text-[14px] text-center w-[200px] line-clamp-3 md:w-[240px]">
                 {book.summary}
               </p>
+              <h4 className="font-bold text-[18px] leading-tight text-center w-[200px] line-clamp-2">
+                {book.price}
+              </h4>
               <Link
                 to="/billing"
+                onClick={() => setSelectedBook(book)}
                 className="text-base font-medium text-white bg-blue-500 rounded-full px-7 md:px-8 py-2 md:py-3 hover:bg-blue-600 flex items-center justify-center gap-3"
               >
                 Purchase

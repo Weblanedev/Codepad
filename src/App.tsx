@@ -20,7 +20,7 @@ const [selectedBook, setSelectedBook] = useState<Book>(books[1]);
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Homepage setSelectedBook={setSelectedBook} />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/billing" element={<Billing selectedBook={selectedBook} />} />

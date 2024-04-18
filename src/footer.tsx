@@ -44,7 +44,7 @@ const Footer = () => {
           Contact
         </Link>
         <Link
-          to="/homepage"
+          to="/"
           className="text-[14px] leading-[24px] font-medium text-white cursor-pointer"
         >
           Terms & Privacy

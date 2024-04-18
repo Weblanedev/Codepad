@@ -44,7 +44,7 @@ const Footer = () => {
           Contact
         </Link>
         <Link
-          to="/privacy-policy"
+          to="/homepage"
           className="text-[14px] leading-[24px] font-medium text-white cursor-pointer"
         >
           Terms & Privacy
@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
 
       <p className="text-[12px] capitalize leading-[24px] text-center text-gray-400">
-        © 2023 CodePad technology platforms Limited. All Rights Reserved Apollo
+        © 2023 CodePad technology platforms Limited.
       </p>
     </div>
   );

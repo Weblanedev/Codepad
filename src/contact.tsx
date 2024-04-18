@@ -76,7 +76,7 @@ const Contact = () => {
           <h1 className="font-medium md:font-semibold text-[50px] sm:text-[40px] md:text-[50px] md:text-left leading-snug md:leading-[62px] text-center text-blue-950">
             Contact Us
           </h1>
-          <p>Find the best way to get help and connect with Splashtop</p>
+          <p>Find the best way to get help and connect with us</p>
         </div>
       </section>
 
@@ -175,17 +175,6 @@ const Contact = () => {
                 Mail Us
               </h4>
               <p className="text-blue-500 leading-[16px]">support@codepad.ng</p>
-            </div>
-          </div>
-          <div className="flex gap-5 items-start justify-center">
-            <img src={locationIcon} alt="" className="w-6 pt-1" />
-            <div className="flex flex-col items-start justify-center gap-3">
-              <h4 className="text-[24px] leading-[24px] font-medium">
-                Address
-              </h4>
-              <p className="text-blue-500 leading-normal">
-                6, Samuel Manuwa Stree, Victoria Island, Lagos, Nigeira
-              </p>
             </div>
           </div>
         </div>

@@ -183,7 +183,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Address
               </h4>
-              <p className="text-orange-500 leading-normal">
+              <p className="text-blue-500 leading-normal">
                 15 Odiyan Street, Lekki, Phase 1
               </p>
             </div>

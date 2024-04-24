@@ -3,6 +3,7 @@ import { useModals } from "./useModal";
 import ShowContactModal from "./show-contact";
 import phoneIcon from "./assets/phone.png";
 import mailIcon from "./assets/mail.png";
+import locationIcon from "./assets/location.png";
 
 const Contact = () => {
   useEffect(() => {
@@ -174,6 +175,17 @@ const Contact = () => {
                 Mail Us
               </h4>
               <p className="text-blue-500 leading-[16px]">support@codepad.ng</p>
+            </div>
+          </div>
+          <div className="flex gap-5 items-start justify-center">
+            <img src={locationIcon} alt="" className="w-6 pt-1" />
+            <div className="flex flex-col items-start justify-center gap-3">
+              <h4 className="text-[24px] leading-[24px] font-medium">
+                Address
+              </h4>
+              <p className="text-orange-500 leading-normal">
+                15 Odiyan Street, Lekki, Phase 1
+              </p>
             </div>
           </div>
         </div>
